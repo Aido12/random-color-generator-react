@@ -1,11 +1,10 @@
-import './App.css';
 import randomColor from 'randomcolor';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 export default function App() {
   const [color, setColor] = useState('#ffff');
   return (
-    <div classsName="App">
+    <div className="App">
       <div
         style={{
           backgroundColor: color,
@@ -21,3 +20,22 @@ export default function App() {
     </div>
   );
 }
+
+// export default function App() {
+//   const [color, setColor] = useState('#ffff');
+//   return (
+//     <div
+//       className="App"
+//       style={{
+//         backgroundColor: color,
+//         height: '200px',
+//         margin: '50px',
+//         padding: '50px',
+//       }}
+//     >
+//       <h1>Random Color Generator</h1>
+//       <button onClick={() => setColor(randomColor())}>Generate</button>
+//       {color}
+//     </div>
+//   );
+// }
